@@ -1,0 +1,18 @@
+NOTA FISCAL ELETRÔNICA Nº {{ numero_nf | default("000123") }}
+Data de Emissão: {{ data_emissao | default("03/05/2026") }}
+
+EMITENTE
+Razão Social: {{ nome_empresa | default("Empresa Exemplo Ltda") }}
+CNPJ: {{ cnpj_valor }}
+Inscrição Estadual: {{ ie_valor }}
+Endereço: {{ endereco }}, {{ cidade }}/{{ estado }}
+
+DESTINATÁRIO
+Nome: {{ nome }}
+CPF: {{ cpf_valor }}
+Endereço: {{ endereco }}, CEP {{ cep_valor }}
+
+DESCRIÇÃO DOS SERVIÇOS
+{{ descricao | default("Prestação de serviços conforme contrato vigente") }}
+
+VALOR TOTAL: R$ {{ valor | default("1.200,00") }}

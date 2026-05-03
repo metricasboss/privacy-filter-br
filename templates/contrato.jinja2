@@ -1,0 +1,16 @@
+CONTRATO DE PRESTAÇÃO DE SERVIÇOS
+
+CONTRATANTE: {{ nome_empresa | default("Empresa XYZ Ltda") }}, CNPJ {{ cnpj_valor }},
+Inscrição Estadual {{ ie_valor }}, com sede à {{ endereco_empresa | default("Rua Exemplo, 100") }}.
+
+CONTRATADO(A): {{ nome }}, {{ nacionalidade | default("brasileiro(a)") }},
+portador(a) do CPF nº {{ cpf_valor }}, RG nº {{ rg_valor }},
+{{ cnh_label | default("CNH") }} nº {{ cnh_valor }},
+nascido(a) em {{ data_nasc }}, filho(a) de {{ mae | default("não informado") }},
+residente à {{ endereco }}, {{ cidade }}/{{ estado }}, CEP {{ cep_valor }}.
+{{ titulo_label | default("Título de Eleitor") }}: {{ titulo_eleitor_valor }}
+PIS/PASEP: {{ pis_valor }}
+
+OBJETO: {{ objeto | default("Prestação de serviços de consultoria") }}
+
+{{ cidade }}, {{ data_contrato | default("03 de maio de 2026") }}

@@ -1,0 +1,12 @@
+CERTIDÃO DE {{ tipo_certidao | default("NASCIMENTO") | upper }}
+
+Certidão nº {{ certidao_nascimento_valor }}
+
+Certifico que nos registros deste cartório consta {{ tipo_certidao | default("nascimento") }} de
+{{ nome }}, {{ nacionalidade | default("brasileiro(a)") }},
+nascido(a) em {{ data_nasc }}, filho(a) de {{ mae | default("não informado") }},
+residente em {{ cidade }}/{{ estado }}, portador(a) do CPF {{ cpf_valor }}.
+
+Esta certidão foi expedida a pedido do(a) interessado(a) para fins legais.
+
+{{ cidade }}, {{ data_expedicao | default("03 de maio de 2026") }}

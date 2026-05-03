@@ -1,0 +1,14 @@
+RELATÓRIO DE ATENDIMENTO — {{ data_relatorio | default("03/05/2026") }}
+
+Cliente: {{ nome }}
+Identificação: CPF {{ cpf_valor }}
+Contato: {{ celular_valor }} | {{ email }}
+Protocolo: {{ protocolo | default("2026-00789") }}
+
+Histórico de interações:
+- {{ data1 | default("01/05/2026") }}: Primeiro contato via {{ canal | default("e-mail") }}
+- {{ data2 | default("02/05/2026") }}: Confirmação de dados cadastrais
+- {{ data3 | default("03/05/2026") }}: {{ descricao_acao | default("Resolução do chamado") }}
+
+Status: {{ status | default("Resolvido") }}
+Responsável: {{ responsavel | default("Atendimento") }}

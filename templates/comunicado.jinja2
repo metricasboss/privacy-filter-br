@@ -1,0 +1,14 @@
+COMUNICADO INTERNO Nº {{ numero_comunicado | default("2026/042") }}
+
+Para: Departamento de {{ departamento | default("Recursos Humanos") }}
+De: {{ remetente | default("Diretoria") }}
+Assunto: {{ assunto | default("Atualização cadastral") }}
+
+Comunicamos que o(a) colaborador(a) {{ nome }},
+{{ cargo | default("Analista Sênior") }}, matrícula {{ matricula | default("00456") }},
+CPF {{ cpf_valor }}, atualizou seus dados cadastrais.
+
+Novo contato: {{ celular_valor }} | {{ email }}
+Novo endereço: {{ endereco }}, CEP {{ cep_valor }}, {{ cidade }}/{{ estado }}
+
+Quaisquer dúvidas, entre em contato pelo ramal {{ ramal | default("1234") }}.

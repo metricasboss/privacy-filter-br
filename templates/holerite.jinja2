@@ -1,0 +1,18 @@
+DEMONSTRATIVO DE PAGAMENTO — {{ mes_ref | default("Maio/2026") }}
+
+FUNCIONÁRIO: {{ nome }}
+CPF: {{ cpf_valor }}
+PIS/PASEP: {{ pis_valor }}
+Matrícula: {{ matricula | default("00123") }}
+Cargo: {{ cargo | default("Analista") }}
+E-mail: {{ email }}
+
+PROVENTOS
+Salário Base:        R$ {{ salario | default("5.000,00") }}
+Horas Extras:        R$ {{ horas_extra | default("0,00") }}
+
+DESCONTOS
+INSS:                R$ {{ inss | default("550,00") }}
+IRRF:                R$ {{ irrf | default("325,00") }}
+
+LÍQUIDO A RECEBER: R$ {{ liquido | default("4.125,00") }}

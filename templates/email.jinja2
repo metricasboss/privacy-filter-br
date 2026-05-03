@@ -1,0 +1,15 @@
+De: {{ nome }} <{{ email }}>
+Para: financeiro@empresa.com.br
+Assunto: Atualização de cadastro
+
+Prezados,
+
+Solicito atualização do cadastro do {{ cargo | default("colaborador") }} {{ nome }},
+{{ cpf_label | default("CPF") }} {{ cpf_valor }}, {{ rg_label | default("RG") }} {{ rg_valor }},
+residente à {{ endereco }}, {{ cidade }}/{{ estado }}, CEP {{ cep_valor }}.
+
+Contato: {{ celular_valor }} | {{ email }}
+{{ pis_label | default("PIS/PASEP") }}: {{ pis_valor }}
+
+Atenciosamente,
+{{ nome }}

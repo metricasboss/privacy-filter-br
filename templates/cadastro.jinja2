@@ -1,0 +1,21 @@
+FORMULÁRIO DE CADASTRO DE CLIENTE
+
+Nome completo: {{ nome }}
+CPF: {{ cpf_valor }}
+RG: {{ rg_valor }}
+CNH: {{ cnh_valor }}
+Título de Eleitor: {{ titulo_eleitor_valor }}
+Data de Nascimento: {{ data_nasc }}
+PIS/PASEP: {{ pis_valor }}
+
+Endereço: {{ endereco }}
+CEP: {{ cep_valor }}
+Cidade/UF: {{ cidade }}/{{ estado }}
+
+E-mail: {{ email }}
+Celular: {{ celular_valor }}
+Telefone: {{ telefone_fixo_valor | default("não informado") }}
+
+Certidão de nascimento nº {{ certidao_nascimento_valor }}
+CNPJ da empresa: {{ cnpj_valor }}
+Inscrição Estadual: {{ ie_valor }}
